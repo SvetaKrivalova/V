@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <title>Кривалова Светлана</title>
+</head>
+<body>
+    <div class="oneblock">
+        <div class="info">
+            <h1>Кривалова Светлана</h1>
+            <h1 class="VL">Vladislavovna</h1>
+            <h2>Являюсь студенткой Кемеровского государственного университета. Учусь на направлении прикладная информатика в экономике на 3 курсе.</h2>
+
+            <p>Связь со мной:</p>
+            <ul>
+                <li><a href="https://vk.com/krivalova"><img src="img/вк.png" alt="" class="socnet"></a></li>
+                <li><a href="https://t.me/@Krivalova"><img src="img/тг.png" alt="" class="socnet"></a></li>
+                <li><a href="mailto:sveta.krivalova@mail.ru"><img src="img/почта.png" alt="" class="socnet"></a></li>
+            </ul>
+        </div>
+
+        <div class="img">
+            <img src="img/4.jpg" alt="" class="img1">
+            <img src="img/2.jpg" alt="" class="img2">
+            <div class="rectangle1"></div>
+        </div>
+    </div>
+
+    <div class="twoblock">
+        <div class="kemsu">
+            <h1 class="title1">Мой вуз</h1>
+            <h1 class="stroke1">KemSU</h1>
+            <h2 class="info_kem1">Кемеровский государственный университет - крупнейший вуз Кузбасса. КемГУ входит в число 33 опорных вузов России. Лидер национального рейтинга востребованных вузов по Кемеровской области.</h2>
+            <h2 class="info_kem2">Из стен университета выходят квалифицированные специалисты, которые востребованы в школах, техникумах, вузах, научно-исследовательских центрах, коммерческих предприятиях, банках, в правоохранительных органах, юстиции, в ведущих отраслях экономики как региона, так и страны.</h2>
+            <div class="rectangle2"></div>
+            <h2><a href="https://kemsu.ru/">Перейти на сайт университета</a></h2>
+        </div>
+
+        <div class="kem_img">
+
+            <img src="img/kemsuimg.jpg" alt="" class="kemsu_img">
+        </div>
+    </div>
+
+    <div class="threeblock">
+        <h1 class="title2">Мои увлечения</h1>
+        <h1 class="stroke2">and hobbies</h1>
+
+        <div class="read">
+            <img src="img/read.png" alt="" class="readimg">
+            <h2 class="readtext">Чтение</h2>
+            <div class="rectangle3"></div>
+            <h2 class="readtext2">Приятное времяпровождение, которое способствует развитию вооброжения, улучшения памяти</h2>
+        </div>
+
+        <div class="yoga">
+            <img src="img/yoga.png" alt="" class="yogaimg">
+            <h2 class="yogatext">Йога</h2>
+            <div class="rectangle4"></div>
+            <h2 class="yogatext2">Занятия йогой по вечерам помогает снять стресс и полностью расслабиться</h2>
+        </div>
+
+    </div>
+
+    <div class="fourblock">
+        <div class="job">
+            <h1 class="title3">Моя будущая профессия</h1>
+            <h1 class="stroke3">UI/UX Designer</h1>
+            <h2 class="info_job">UX/UI дизайнер — специалист, который проектирует и рисует интерфейсы цифровых продуктов: мобильных и веб-приложений, сайтов. Такой дизайнер может участвовать как в создании новых продуктов, так и помогать дорабатывать те, что уже запущены.</h2>
+            <h2 class="info_job2">Глобальная задача UX/UI дизайнера — сделать цифровой продукт максимально понятным, удобным и визуально приятным для пользователя, чтобы тот решал свои проблемы с помощью продукта быстро и эффективно. При этом, конечно, важно не забывать и про задачи бизнеса: продукт должен монетизироваться, приносить прибыль.</h2>
+        </div>
+    </div>
+
+    <div class="fiveblock">
+        
+        <h1 class="title3">Галерея</h1>
+        <h1 class="stroke4">Gallery</h1>
+        <input type="text" id="searchTag" placeholder="Введите тег">
+
+        <div id="imageContainer" class="imageContainer">
+            <img src="img/интерьер1.jpg" data-tag="интерьер" class="scale">
+            <img src="img/интерьер2.jpg" data-tag="интерьер" class="scale">
+            <img src="img/интерьер3.jpg" data-tag="интерьер" class="scale">
+            <img src="img/природа1.jpg" data-tag="природа" class="scale">
+            <img src="img/природа2.jpg" data-tag="природа" class="scale">
+            <img src="img/природа3.jpg" data-tag="природа" class="scale">
+            <img src="img/cat.jpg" data-tag="кошка" class="scale">
+            <img src="img/cat2.jpg" data-tag="кошка" class="scale">
+            <img src="img/cat3.jpg" data-tag="кошка" class="scale">
+            <img src="img/шрифт.jpg" data-tag="другое" class="scale">
+            <img src="img/шрифт2.jpg" data-tag="другое" class="scale">
+            <img src="img/шрифт3.jpg" data-tag="другое" class="scale">
+
+        </div>
+
+        <script>
+            var searchInput = document.getElementById("searchTag");
+            var images = document.getElementById("imageContainer").getElementsByTagName("img");
+            
+            searchInput.addEventListener("input", function() {
+            var tag = searchInput.value.toLowerCase();
+            
+            for (var i = 0; i < images.length; i++) {
+            var tags = images[i].getAttribute("data-tag").toLowerCase();
+            
+            if (tags.includes(tag)) {
+            images[i].style.display = "block"; // Показать картинку, если тег совпадает
+            } else {
+            images[i].style.display = "none"; // Скрыть картинку, если тег не совпадает
+            }
+            }
+            });
+        </script>
+    </div>
+
+    <div class="footer">
+        <div class="rectangle5"></div>
+
+        <div class="nav">
+            <ul align="center">
+                <li><a href="https://vk.com/krivalova"><img src="img/вк.png" alt="" class="socnet"></a></li>
+                <li><a href="https://t.me/@Krivalova"><img src="img/тг.png" alt="" class="socnet"></a></li>
+                <li><a href="mailto:sveta.krivalova@mail.ru"><img src="img/почта.png" alt="" class="socnet"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
